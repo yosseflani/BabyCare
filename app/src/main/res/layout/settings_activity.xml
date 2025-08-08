@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="24dp"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="האימייל שלך"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="כתובת האימייל של המשתמש" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪 התנתק"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="כפתור התנתקות מהמערכת" />
+
+        <Button
+            android:id="@+id/btnLeaveFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏠 צא מהמשפחה"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="כפתור יציאה מהמשפחה" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnBackToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔙 חזור לתפריט הראשי"
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:contentDescription="כפתור חזרה לתפריט הראשי" />
+
+    </LinearLayout>
+</ScrollView>

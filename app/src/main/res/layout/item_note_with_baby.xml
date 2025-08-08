@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/item_background"
+    android:layoutDirection="rtl"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/textNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="כותרת ההערה"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:gravity="right"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/textNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="תיאור ההערה"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:gravity="right"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/textNoteBabyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👶 תינוק: שם"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:gravity="right" />
+</LinearLayout>

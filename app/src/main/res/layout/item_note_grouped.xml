@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layoutDirection="rtl"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp"
+    android:backgroundTint="#F5F5F5">
+
+    <TextView
+        android:id="@+id/txtBabyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👶 שם התינוק"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#3F51B5"
+        android:gravity="right"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/noteContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerVertical"
+        android:dividerPadding="8dp"
+        android:showDividers="beginning|middle|end" />
+</LinearLayout>

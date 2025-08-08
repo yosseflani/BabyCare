@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl"
+    tools:context=".AddChecklistItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧾 הוספת משימה יומית"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <EditText
+            android:id="@+id/etChecklistTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שם המשימה *"
+            android:textDirection="rtl"
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etChecklistDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="תיאור (לא חובה)"
+            android:textDirection="rtl"
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etChecklistTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="בחר שעה"
+            android:focusable="false"
+            android:clickable="true"
+            android:textDirection="rtl"
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSaveChecklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 שמור משימה"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:elevation="2dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

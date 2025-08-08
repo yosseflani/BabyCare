@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👶 הוספת תינוק חדש"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp" />
+
+        <ImageView
+            android:id="@+id/imageViewSelected"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_person_outline_24"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_circle_background"
+            android:contentDescription="תמונה של התינוק"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📷 בחר תמונה"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שם התינוק"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="שם התינוק" />
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="תאריך לידה (yyyy-MM-dd)"
+            android:focusable="false"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="תאריך לידה" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="משקל (ק״ג)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="משקל התינוק" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="גובה (ס״מ)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="גובה התינוק" />
+
+        <EditText
+            android:id="@+id/etAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="אלרגיות (לא חובה)"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="אלרגיות" />
+
+        <EditText
+            android:id="@+id/etMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="תרופות קבועות (לא חובה)"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="תרופות קבועות" />
+
+        <Button
+            android:id="@+id/btnSaveBaby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 שמור תינוק"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:contentDescription="כפתור לשמירת תינוק" />
+    </LinearLayout>
+</ScrollView>

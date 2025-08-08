@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝 הוספת הערה חדשה"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp" />
+
+
+        <EditText
+            android:id="@+id/etNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="כותרת"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="right" />
+
+
+        <EditText
+            android:id="@+id/etNoteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="תיאור (לא חובה)"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="right" />
+
+
+        <EditText
+            android:id="@+id/etNoteTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="בחר זמן"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="right"/>
+
+
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 שמור הערה"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:elevation="2dp" />
+    </LinearLayout>
+</ScrollView>

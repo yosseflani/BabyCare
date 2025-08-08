@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleBabyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="רשימת תינוקות"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBabies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnAddBaby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ הוסף תינוק"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

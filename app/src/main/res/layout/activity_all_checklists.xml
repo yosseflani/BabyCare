@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋 כל הצ'קליסטים להיום"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="כותרת המציגה את רשימת כל המשימות היומיות לתינוקות" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAllChecklists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:contentDescription="רשימת כל משימות הצ'קליסט היומי" />
+</LinearLayout>

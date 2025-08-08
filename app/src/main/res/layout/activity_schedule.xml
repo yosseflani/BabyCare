@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <Button
+        android:id="@+id/btnAddSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ הוסף משימה חדשה"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/textEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="אין משימות קבועות כרגע"
+        android:textColor="#777"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:contentDescription="רשימת משימות קבועות" />
+</LinearLayout>

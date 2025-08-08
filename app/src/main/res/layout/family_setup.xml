@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:layoutDirection="rtl"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הצטרפות או יצירת משפחה"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="כותרת המסך" />
+
+        <EditText
+            android:id="@+id/editTextFamilyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="מזהה משפחה"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="שדה להזנת מזהה משפחה" />
+
+        <Button
+            android:id="@+id/btnJoinFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="הצטרף למשפחה"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#03A9F4"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="כפתור להצטרפות למשפחה קיימת" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnCreateFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="צור משפחה חדשה"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:contentDescription="כפתור ליצירת משפחה חדשה" />
+
+    </LinearLayout>
+</ScrollView>

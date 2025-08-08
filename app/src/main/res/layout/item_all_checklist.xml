@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layoutDirection="rtl"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שם משימה"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🕒 שעה: 08:00"
+            android:textColor="#777"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/textBabyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👶 תינוק: דוד"
+            android:textColor="#888"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:buttonTint="#4CAF50"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="סמן אם המשימה בוצעה" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="➖"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:padding="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="מחק משימה" />
+</LinearLayout>

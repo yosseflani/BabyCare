@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗓 הוספת משימה"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="📝 שם המשימה"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="📄 תיאור (אופציונלי)"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🔁 חזרה כל (שעות)"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="⏰ שעה לביצוע"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSaveSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 שמור משימה"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

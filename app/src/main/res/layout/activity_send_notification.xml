@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etNotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🔔 כותרת ההתראה"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNotificationBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="✉️ תוכן ההתראה"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSendNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 שלח התראה"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

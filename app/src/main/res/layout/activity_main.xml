@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBabyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👶 רשימת תינוקות"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#03A9F4"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnViewAllChecklists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 כל הצ'קליסטים"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnViewAllNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 כל ההערות"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9C27B0"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnViewAllSchedules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📆 כל המשימות"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnAddBaby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ הוסף תינוק"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#673AB7"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ הגדרות"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#607D8B"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
