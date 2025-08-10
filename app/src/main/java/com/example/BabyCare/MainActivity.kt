@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
 
-        // קבלת טוקן FCM והדפסתו
         FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val token = task.result
@@ -65,7 +64,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // רישום ל־Topic לפי familyId
         FirebaseMessaging.getInstance().subscribeToTopic("family_$familyId")
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
@@ -75,7 +73,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-        // תזמון יצירת צ'קליסט יומי
         scheduleDailyChecklistWorker(this)
     }
 
